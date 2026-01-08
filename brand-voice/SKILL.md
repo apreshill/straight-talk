@@ -7,6 +7,8 @@ description: "Revise brand and corporate communications into clear, respectful, 
 
 Transform brand and corporate writing into clear, respectful communication that sounds human while maintaining professionalism.
 
+**Note:** Examples in this skill use specific brands (like Aesop, Intuit) for clarity, but all principles apply universally to any brand or organization.
+
 ## Core Philosophy
 
 **Formality with warmth.** Respectful and considered, with splashes of wit where appropriate. Never cold, never casual.
