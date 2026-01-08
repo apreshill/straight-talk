@@ -1,6 +1,12 @@
-# Testing codex-voice Skill
+# Testing Straight-Talk Skills
 
-## Test Scenario
+Demonstrations of codex-voice, brand-voice, and social-voice transforming generic content into clear, human communication.
+
+---
+
+## Test 1: Technical blog post (codex-voice)
+
+### Test Scenario
 Write a technical blog post introduction about Kubernetes networking using the codex-voice patterns.
 
 ---
@@ -56,7 +62,7 @@ If your pods can't talk to each other, it's probably DNS. If your service can't 
 
 ---
 
-## Test 2: Applying brand-voice to product copy
+## Test 2: Product copy (brand-voice)
 
 ### WITHOUT brand-voice (typical marketing):
 
@@ -129,7 +135,7 @@ Try it free for 30 days. No credit card required.
 
 ---
 
-## Test 3: Corporate email with heart
+## Test 3: Corporate email (brand-voice)
 
 ### WITHOUT brand-voice (typical corporate):
 
@@ -192,17 +198,77 @@ We'll post updates at status.cloudsync.com if anything changes.
 
 ---
 
+---
+
+## Test 4: LinkedIn post (social-voice)
+
+### WITHOUT social-voice (LLM slop):
+
+> 🚀 Excited to share something I've been working on! 🚀
+>
+> You've been building data pipelines. Your team needs better collaboration. There's a better way.
+>
+> Introducing our new feature that makes data sharing seamless! Here's what it does:
+>
+> ✨ Automatic syncing  
+> ✨ Version control built-in  
+> ✨ Real-time updates  
+> ✨ Enterprise-grade security
+>
+> Ready to transform your workflow? Check it out! 👇
+>
+> #DataEngineering #Innovation #TechLeadership
+
+**Problems:**
+- ❌ "Excited to share" (throat-clearing)
+- ❌ Setup formula ("You've been... Your team needs...")
+- ❌ "There's a better way" (false conversational)
+- ❌ "Seamless," "transform" (marketing hyperbole)
+- ❌ Emoji bullets
+- ❌ Feature list without context
+- ❌ Engagement bait + hashtag spam
+- ❌ 85 words, zero concrete information
+
+---
+
+### WITH social-voice applied:
+
+> Your teammate asks for your model. You send a pickle file. They send back an error message. You send environment.yml. They send back a different error message.
+>
+> Now: they run pxt.replicate(). They get a working table. Done.
+>
+> Saves about 3 hours per handoff.
+
+**What's different:**
+- ✅ **Drops into concrete situation** (no setup, no announcement)
+- ✅ **Shows the problem through artifacts** (pickle file, error messages, environment.yml)
+- ✅ **Compressed narrative** (the back-and-forth pain)
+- ✅ **Crisp solution** ("They get a working table. Done.")
+- ✅ **Honest benefit** (3 hours, not "transform your workflow")
+- ✅ **Respects the scroll** (47 words vs 85)
+- ✅ **No LLM tells** (no emojis, no hype, no engagement bait)
+
+**Principles used:**
+- **Get to the point**: First line is the situation
+- **Show, don't tell**: Actual artifacts (pickle file, error messages)
+- **Let brevity create impact**: "Done." is a complete sentence
+- **Silence creates tension**: The space between problem and solution
+- **Concrete artifacts over categories**: Not "manual processes," but "pickle file, error messages"
+
+---
+
 ## Conclusion
 
-Both skills are working as intended:
+All three skills are working as intended:
 
-✅ **codex-voice**: Transforms generic technical writing into warm, direct prose that respects the reader
-✅ **brand-voice**: Transforms marketing-speak and corporate-speak into clear, human communication with honesty about tradeoffs
+✅ **codex-voice**: Transforms generic technical writing into warm, direct prose that respects the reader  
+✅ **brand-voice**: Transforms marketing-speak and corporate-speak into clear, human communication with honesty about tradeoffs  
+✅ **social-voice**: Transforms LLM slop into crisp, concrete social content that respects the scroll
 
-The enhanced brand-voice now has:
-- The formality and word discipline from Aesop
-- The conversational clarity from Intuit  
-- **The honest directness and warmth from The Composable Codex**
+The skills build on each other:
+- **codex-voice**: Foundation for all technical writing (long-form)
+- **brand-voice**: Foundation for brand communications (codex heart + Aesop formality + Intuit clarity)
+- **social-voice**: Specialized for social media (brand-voice compressed + platform-specific patterns)
 
 The skills teach mechanisms and patterns that can be applied to any content, not just the source material they were extracted from.
 

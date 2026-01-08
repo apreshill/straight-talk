@@ -8,7 +8,28 @@ These skills distill the voice, style, and structural patterns from exemplary wr
 
 Think of them as voice cloning for writing style: the patterns, rhythms, and techniques that make writing feel direct, warm, honest, and intelligent—without dictating subject matter.
 
-**See it in action:** Check out [test-skill-usage.md](test-skill-usage.md) for before/after examples showing how both skills transform generic writing into clear, human communication.
+**See it in action:** Check out [test-skill-usage.md](test-skill-usage.md) for before/after examples showing how the skills transform generic writing into clear, human communication.
+
+### How the Skills Build on Each Other
+
+```
+codex-voice (foundation)
+    ↓
+    Adds: narrative intelligence, concrete-before-abstract, 
+          tension acknowledged, reader as peer
+    ↓
+brand-voice (adds formality + clarity)
+    ↓
+    Adds: Aesop's word discipline, Intuit's conversational clarity,
+          professional polish while maintaining warmth
+    ↓
+social-voice (compresses + adds platform constraints)
+    ↓
+    Adds: brevity, platform mechanics, crunch framework,
+          respect for the scroll
+```
+
+Each skill builds on the previous one. Use codex-voice for long-form technical writing, brand-voice for brand communications, and social-voice for social media where every word must earn its place.
 
 ## Skills in This Repo
 
@@ -38,6 +59,21 @@ Use when writing any brand or customer-facing content where you want to:
 
 **Location:** `brand-voice/`  
 **Packaged file:** `brand-voice.skill`
+
+### social-voice
+**Voice & style for social media and short-form content**
+
+Builds on brand-voice principles with platform-specific guidance for LinkedIn, Twitter/X, and other social platforms. Combines clarity, crispness, and respect for the reader's scroll. Includes extensive anti-patterns for recognizing and eliminating LLM slop.
+
+Use when writing social media content where you want to:
+- Get to the point in the first 2 lines
+- Show through concrete artifacts, not abstract categories
+- Let brevity create impact
+- Respect your reader's scroll
+- Avoid the telltale patterns of AI-generated social content
+
+**Location:** `social-voice/`  
+**Packaged file:** `social-voice.skill`
 
 ## Using the Skills
 
@@ -86,14 +122,19 @@ straight-talk/
 ├── scripts/                    # Utility scripts
 │   ├── init_skill.py          # Initialize new skill
 │   └── package_skill.py       # Package skill for distribution
-├── codex-voice/               # Composable Codex writing style
+├── codex-voice/               # Long-form technical writing
 │   ├── SKILL.md              # Main skill file
 │   └── references/
 │       └── patterns.md       # Sentence patterns to emulate
-├── brand-voice/               # Brand voice writing skill
+├── brand-voice/               # Brand & corporate communications
 │   ├── SKILL.md              # Main skill file
 │   └── references/
 │       └── word-lists.md     # Vocabulary guidance
+├── social-voice/              # Social media & short-form
+│   ├── SKILL.md              # Main skill file
+│   └── references/
+│       └── examples.md       # Before/after transformations
 ├── codex-voice.skill         # Packaged skill files
-└── brand-voice.skill
+├── brand-voice.skill
+└── social-voice.skill
 ```
