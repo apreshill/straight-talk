@@ -43,7 +43,7 @@ Use when writing about any technical topic where you want to:
 - Write with warmth and personality, not corporate blandness
 - Trust your reader to keep up while still being clear
 
-**Location:** `codex-voice/`  
+**Location:** `codex-voice/`
 **Packaged file:** `codex-voice.skill`
 
 ### brand-voice
@@ -57,7 +57,7 @@ Use when writing any brand or customer-facing content where you want to:
 - Show respect for your reader's time and intelligence
 - Be honest about tradeoffs instead of claiming perfection
 
-**Location:** `brand-voice/`  
+**Location:** `brand-voice/`
 **Packaged file:** `brand-voice.skill`
 
 ### social-voice
@@ -72,12 +72,36 @@ Use when writing social media content where you want to:
 - Respect your reader's scroll
 - Avoid the telltale patterns of AI-generated social content
 
-**Location:** `social-voice/`  
+**Location:** `social-voice/`
 **Packaged file:** `social-voice.skill`
 
-## Using the Skills
+## Installation
 
-To use a skill with Claude:
+### Claude Code
+
+Add this repository as a plugin marketplace:
+
+```bash
+/plugin marketplace add apreshill/straight-talk
+```
+
+Then install the writing-voices plugin:
+
+```bash
+/plugin install writing-voices@straight-talk
+```
+
+After installation, Claude will automatically use these skills when relevant, or you can invoke them directly:
+
+```bash
+/straight-talk:codex-voice
+/straight-talk:brand-voice
+/straight-talk:social-voice
+```
+
+### Claude.ai
+
+To use a skill with Claude.ai:
 1. Download the `.skill` file
 2. Import it into your Claude workspace
 3. The skill will guide Claude's writing style for your content
@@ -119,9 +143,12 @@ skill-name/
 
 ```
 straight-talk/
-├── scripts/                    # Utility scripts
-│   ├── init_skill.py          # Initialize new skill
-│   └── package_skill.py       # Package skill for distribution
+├── .claude-plugin/            # Claude Code plugin configuration
+│   ├── plugin.json           # Plugin manifest
+│   └── marketplace.json      # Marketplace configuration
+├── scripts/                   # Utility scripts
+│   ├── init_skill.py         # Initialize new skill
+│   └── package_skill.py      # Package skill for distribution
 ├── codex-voice/               # Long-form technical writing
 │   ├── SKILL.md              # Main skill file
 │   └── references/
@@ -134,7 +161,7 @@ straight-talk/
 │   ├── SKILL.md              # Main skill file
 │   └── references/
 │       └── examples.md       # Before/after transformations
-├── codex-voice.skill         # Packaged skill files
+├── codex-voice.skill          # Packaged skill files (for Claude.ai)
 ├── brand-voice.skill
 └── social-voice.skill
 ```

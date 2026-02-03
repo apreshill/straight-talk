@@ -1,0 +1,24 @@
+{
+  "name": "straight-talk",
+  "owner": {
+    "name": "Alison Presmanes Hill",
+    "url": "https://github.com/apreshill"
+  },
+  "metadata": {
+    "description": "Writing voice skills for technical content, brand communications, and social media. Content-agnostic skills that teach Claude how to write with directness, warmth, and respect for the reader's intelligence.",
+    "version": "1.0.0"
+  },
+  "plugins": [
+    {
+      "name": "writing-voices",
+      "description": "Collection of writing voice skills for different contexts: long-form technical content, brand communications, and social media",
+      "source": "./",
+      "strict": false,
+      "skills": [
+        "./codex-voice",
+        "./brand-voice",
+        "./social-voice"
+      ]
+    }
+  ]
+}
